@@ -4,11 +4,12 @@ local.properties
 /gradlew
 /gradlew.bat
 /gradle
+.gradle
 # Ant builds
 ant-build
 ant-gen
 # Eclipse builds
 gen
 out
-# Gradle builds
-/build
+# Any builds
+build/
