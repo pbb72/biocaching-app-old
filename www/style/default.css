@@ -1,13 +1,44 @@
 html, body {
 	height: 100%;
 	margin: 0;
+	font: x-large Roboto, sans-serif;
+}
+a {
+	color: inherit;
+	display: block;
+	text-decoration: inherit;
+}
+h1 {
+	border-bottom: 4px solid #33b5e5;
+	color: #33b5e5;
+	font-weight: inherit;
+	font-size: 1.7em;
+	margin: 0;
+	padding: 1rem;
 }
 .page { /* full-page clickable link */
-	display: block;
 	height: 100%;
 }
+.shadow-cover {
+	height: 100%;
+	box-sizing: border-box;
+	background: rgba(0,0,0,.7);
+}
+.popup {
+	background: white;
+	width: 20em;
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 0.2rem;
+	box-shadow: 0 0 0.5rem #000;
+}
+
+/* screenshot pages */
 .screenshot {
 	background: #333;
+}
+.screenshot a {
+	height: 100%;
 }
 .screen { /* full-page centered image */
 	display: block;
@@ -15,6 +46,8 @@ html, body {
 	max-height: 100%;
 	max-width: 100%;
 }
+
+/* splash screen */
 .splash .page::before { /* top margin for splash image */
 	content: "";
 	display: block;
@@ -36,4 +69,69 @@ html, body {
 	max-width: 40%;
 	max-height: 100%;
 	vertical-align: middle;
+}
+
+/* sharing screen */
+.share {
+	background: url("../content/photo.jpg") 0 / cover;
+}
+.share .shadow-cover {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1em;
+}
+.share .share-window-container {
+	display: inline-block;
+	padding: 1em;
+}
+.share .share-window {
+	display: flex;
+	flex-direction: column;
+}
+.share .share-window h1 {
+	flex: 0;
+}
+.share .share-apps {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+}
+.share li {
+	border-bottom: 1px solid #dcdcdc;
+}
+.share li::last-child {
+	border-bottom: none;
+}
+.share .share-apps a {
+	padding: 0.5rem 1rem;
+}
+.share .share-apps a::before {
+	content: "";
+	display: inline-block;
+	height: 3em;
+	width: 3em;
+	vertical-align: middle;
+	margin-right: 1em;
+	border-radius: 10%;
+	box-shadow: 0 0 5px #777;
+}
+.share li.biocaching a::before {
+	background: url("logo-white.png") #f28c00 center/contain;
+}
+.share .facebook a::before {
+	background: url("facebook-white.png") #36609f center/contain;
+}
+.share .gplus a::before {
+	background: url("gplus-white.png") #db5442 center/contain;
+}
+.share .twitter a::before {
+	background: url("twitter-white.png") #2aa9e0 center/contain;
+}
+.share .instagram a::before {
+	background: url("insta-white.png") #ec338e center/contain;
+}
+.share .snapchat a::before {
+	background: url("snap-white.png") #fffc00 center/contain;
 }
