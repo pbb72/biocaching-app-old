@@ -1,7 +1,7 @@
 html, body {
 	height: 100%;
 	margin: 0;
-	font: x-large Roboto, sans-serif;
+	font: 110% Roboto, serif;
 }
 a {
 	color: inherit;
@@ -9,10 +9,10 @@ a {
 	text-decoration: inherit;
 }
 h1 {
-	border-bottom: 4px solid #33b5e5;
+	border-bottom: 0.15rem solid #33b5e5;
 	color: #33b5e5;
 	font-weight: inherit;
-	font-size: 1.7em;
+	font-size: 110%;
 	margin: 0;
 	padding: 1rem;
 }
@@ -79,7 +79,7 @@ h1 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 1em;
+	padding: 1.5em;
 }
 .share .share-window-container {
 	display: inline-block;
@@ -88,9 +88,6 @@ h1 {
 .share .share-window {
 	display: flex;
 	flex-direction: column;
-}
-.share .share-window h1 {
-	flex: 0;
 }
 .share .share-apps {
 	list-style: none;
@@ -106,12 +103,15 @@ h1 {
 }
 .share .share-apps a {
 	padding: 0.5rem 1rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .share .share-apps a::before {
 	content: "";
 	display: inline-block;
-	height: 3em;
-	width: 3em;
+	height: 1.75em;
+	width: 1.75em;
 	vertical-align: middle;
 	margin-right: 1em;
 	border-radius: 10%;
