@@ -1,3 +1,11 @@
+/* -- variables --
+
+$blue: #33b5e5;
+$gray: #333;
+$orange: #f28c00;
+
+*/
+
 html, body {
 	height: 100%;
 	margin: 0;
@@ -7,14 +15,6 @@ a {
 	color: inherit;
 	display: block;
 	text-decoration: inherit;
-}
-h1 {
-	border-bottom: 0.15rem solid #33b5e5;
-	color: #33b5e5;
-	font-weight: inherit;
-	font-size: 110%;
-	margin: 0;
-	padding: 1rem;
 }
 .page { /* full-page clickable link */
 	height: 100%;
@@ -35,7 +35,7 @@ h1 {
 
 /* screenshot pages */
 .screenshot {
-	background: #333;
+	background: #333; /* $gray */
 }
 .screenshot a {
 	height: 100%;
@@ -45,6 +45,16 @@ h1 {
 	margin: auto;
 	max-height: 100%;
 	max-width: 100%;
+}
+
+/* android style */
+.android h1 {
+	border-bottom: 0.15rem solid #33b5e5; /* $blue */
+	color: #33b5e5; /* $blue */
+	font-weight: inherit;
+	font-size: 110%;
+	margin: 0;
+	padding: 1rem;
 }
 
 /* splash screen */
@@ -64,7 +74,7 @@ h1 {
 	vertical-align: middle;
 }
 .splash img {
-	background: #f28c00;
+	background: #f28c00; /* $orange */
 	border-radius: 10%;
 	max-width: 40%;
 	max-height: 100%;
@@ -118,7 +128,7 @@ h1 {
 	box-shadow: 0 0 5px #777;
 }
 .share li.biocaching a::before {
-	background: url("logo-white.png") #f28c00 center/contain;
+	background: url("logo-white.png") #f28c00 center/contain; /* $orange */
 }
 .share .facebook a::before {
 	background: url("facebook-white.png") #36609f center/contain;
@@ -134,4 +144,13 @@ h1 {
 }
 .share .snapchat a::before {
 	background: url("snap-white.png") #fffc00 center/contain;
+}
+
+/* biocaching screens */
+.biocaching .pageheader {
+	background: #f28c00; /* $orange */
+}
+.biocaching .pageheader h1 {
+	color: white;
+	font: normal 100% "Roboto Slab", serif;
 }
