@@ -2,6 +2,7 @@
 
 $blue: #33b5e5;
 $gray: #333;
+$gray-text: #9c9b9b;
 $orange: #f28c00;
 
 */
@@ -11,10 +12,19 @@ html, body {
 	margin: 0;
 	font: 110% Roboto, serif;
 }
+h1, h2, h3, h4, h5, h6, p {
+	font-weight: inherit;
+	margin: 0;
+}
 a {
 	color: inherit;
 	display: block;
 	text-decoration: inherit;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 .page { /* full-page clickable link */
 	height: 100%;
@@ -51,9 +61,7 @@ a {
 .android h1 {
 	border-bottom: 0.15rem solid #33b5e5; /* $blue */
 	color: #33b5e5; /* $blue */
-	font-weight: inherit;
 	font-size: 110%;
-	margin: 0;
 	padding: 1rem;
 }
 
@@ -149,8 +157,28 @@ a {
 /* biocaching screens */
 .biocaching .pageheader {
 	background: #f28c00; /* $orange */
+	padding: 0.5rem;
 }
 .biocaching .pageheader h1 {
 	color: white;
 	font: normal 100% "Roboto Slab", serif;
+	text-align: center;
+}
+.biocaching .pageheader input {
+	display: block;
+	width: 80%;
+	margin: auto;
+}
+.biocaching main {
+	padding: 1rem;
+}
+.biocaching article {
+	padding-bottom: 0.5rem;
+}
+.biocaching .species-nav-list h2 {
+	font-size: 100%;
+}
+.biocaching .species-nav-list p {
+	color: #9c9b9b; /* $gray-text */
+	font-style: italic;
 }
