@@ -12,25 +12,36 @@
 	<meta name="msapplication-TileImage" content="style/icon.png"/>
 </head>
 <body class="biocaching">
+	<!--<img src="content/screen-species.jpg" class="overlay" />-->
 	<header class="pageheader">
-		<h1>Register observation</h1>
-		<input type="search" placeholder="Search species" />
+		<div class="pageheader-part1">
+			<a href="." class="home-link"><span class="a10y">Home</span></a>
+			<a href="#" class="menu-link"><span class="a10y">Menu</span></a>
+			<h1>Register observation</h1>
+		</div>
+		<form class="search">
+			<input type="search" placeholder="Search species" class="search-text" />
+			<input type="submit" class="search-button" value="🔍" />
+		</form>
 	</header>
 	<main><ul class="species-nav-list">
-		<li><article class="animals">
+		<li><article>
 			<header><a href="animals.html">
+				<img src="content/photo-animals.jpg" alt="" />
 				<h2>Animals</h2>
 				<p>Animalia</p>
 			</a></header>
 		</article></li>
-		<li><article class="plants">
+		<li><article>
 			<header><a href="#">
+				<img src="content/photo-plants.jpg" alt="" />
 				<h2>Plants</h2>
 				<p>Plantae</p>
 			</a></header>
 		</article></li>
-		<li><article class="mushrooms">
+		<li><article>
 			<header><a href="#">
+				<img src="content/photo-mushrooms.jpg" alt="" />
 				<h2>Mushrooms</h2>
 				<p>Fungi</p>
 			</a></header>
